@@ -1,0 +1,42 @@
+.social-buttons {
+  display: flex;
+  align-items: center;
+
+  &_them_dark {
+    fill: var(--white-color);
+    background-color: var(--icon-bg-color);
+  }
+}
+
+.social-buttons__item:not(:nth-last-child(1)) {
+  margin-right: 10px;
+}
+
+.social-buttons__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  fill: var(--icon-color);
+  border-radius: 50%;
+
+  transition: background-color var(--timing) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-text-color);
+  }
+}
+
+.social-buttons__icon {
+  width: 20px;
+  height: 20px;
+
+  transition: fill var(--timing) var(--timing-function);
+
+  .social-buttons__link:hover &,
+  .social-buttons__link:focus & {
+    fill: var(--white-color);
+  }
+}

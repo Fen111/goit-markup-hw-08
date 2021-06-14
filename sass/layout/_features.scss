@@ -1,0 +1,32 @@
+.features {
+  &__item {
+    @extend %align-item;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-bg-color);
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+  }
+
+  &__pic {
+    width: 70px;
+    height: 70px;
+  }
+}

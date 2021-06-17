@@ -98,8 +98,7 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .button {
@@ -493,7 +492,6 @@ body {
 .hero {
   max-width: 1600px;
   height: 600px;
-  margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
@@ -507,8 +505,6 @@ body {
 .hero__title {
   margin-top: 0;
   margin-bottom: 30px;
-  padding-left: 452px;
-  padding-right: 452px;
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
@@ -613,12 +609,13 @@ body {
 }
 
 .footer {
-  width: 100%;
+  min-width: 100%;
   height: 252px;
 }
 
 .footer__blocks {
   display: flex;
+  justify-content: center;
 }
 
 .footer__address {

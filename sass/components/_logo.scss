@@ -12,4 +12,9 @@
   &_theme_white {
     color: var(--white-color);
   }
+
+  @media screen and(min-width: 480px) {
+    display: inline-block;
+    margin: 15px 0;
+  }
 }

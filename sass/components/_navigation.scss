@@ -1,26 +1,30 @@
 .nav-list {
-  display: flex;
+  // display: flex;
 
-  &__item + &__item {
-    margin-left: 50px;
-  }
+  // &__item + &__item {
+  //   margin-left: 50px;
+  // }
 
-  &__link {
-    position: relative;
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    color: var(--secondary-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+  // &__link {
+  //   position: relative;
+  //   display: block;
+  //   padding-top: 32px;
+  //   padding-bottom: 32px;
+  //   color: var(--secondary-text-color);
+  //   font-weight: 500;
+  //   font-size: 14px;
+  //   line-height: 1.14;
+  //   letter-spacing: 0.02em;
 
-    transition: color var(--timing) var(--timing-function);
+  //   transition: color var(--timing) var(--timing-function);
 
-    &:hover,
-    &:focus {
-      color: var(--accent-text-color);
-    }
-  }
+  //   &:hover,
+  //   &:focus {
+  //     color: var(--accent-text-color);
+  //   }
+  // }
+
+  // @media screen and(max-width: 767px) {
+  //   display: none;
+  // }
 }

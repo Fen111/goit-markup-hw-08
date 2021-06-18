@@ -1,6 +1,6 @@
 .social-buttons {
   display: flex;
-  align-items: center;
+  justify-content: center;
 
   &_them_dark {
     fill: var(--white-color);

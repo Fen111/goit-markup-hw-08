@@ -1,13 +1,23 @@
 .client {
-  // &__item {
-  //   @extend %align-item;
-  // }
+  display: flex;
+  margin-top: -30px;
+  margin-left: -30px;
+  flex-wrap: wrap;
+
+  &__item {
+    @extend %align-item;
+
+    @media screen and(max-width: 480px) {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
 
   &__link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
     fill: var(--icon-color);
     border: 1px solid var(--icon-color);
@@ -20,6 +30,13 @@
     &:focus {
       border: 1px solid var(--accent-text-color);
       fill: var(--accent-text-color);
+    }
+
+    @media screen and(min-width: 768px) {
+      width: 226px;
+    }
+    @media screen and(min-width: 1200px) {
+      width: 170px;
     }
   }
 }

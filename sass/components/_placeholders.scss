@@ -6,4 +6,8 @@
 %position-item {
   flex-basis: calc((100% - 90px) / 3);
   position: relative;
+
+  // @media screen and(max-width: 1199px) {
+  //   flex-basis: calc((100% - 60px) / 2);
+  // }
 }

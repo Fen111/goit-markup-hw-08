@@ -1,25 +1,60 @@
 .header {
   border-bottom: 1px solid var(--header-line);
 
+  &__logo {
+    @media screen and(min-width: 480px) {
+      margin: 15px 0;
+    }
+    @media screen and(min-width: 768px) {
+      margin: 26px 0;
+    }
+
+    @media screen and(min-width: 1200px) {
+      margin: 24px 0;
+      font-size: 26px;
+    }
+  }
+
   &__navigation {
     @media screen and(max-width: 767px) {
       display: none;
     }
   }
 
-  // &__container {
-  //   display: flex;
-  //   align-items: center;
-  // }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-  // &__nav-list {
-  //   margin-left: 93px;
-  // }
+  &__nav-list {
+    margin-left: 93px;
+
+    @media screen and(min-width: 768px) {
+      margin-left: 88px;
+    }
+  }
 
   &__address {
     @media screen and(max-width: 767px) {
       display: none;
     }
-    // margin-left: auto;
+    margin-left: auto;
+  }
+
+  &__burger-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+
+    @media screen and(min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__burger-icon {
+    width: 40px;
+    height: 40px;
   }
 }

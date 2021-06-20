@@ -24,11 +24,28 @@
     position: relative;
     overflow: hidden;
   }
+
+  &__img {
+    width: 450px;
+    height: 294px;
+
+    @media screen and(min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and(min-width: 1200px) {
+      width: 370px;
+    }
+  }
 }
 
 .project__item {
-  @extend %align-item;
-  @extend %position-item;
+  @media screen and(min-width: 768px) {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 90px) / 3);
+    position: relative;
+  }
+
   transition: box-shadow var(--timing) var(--timing-function);
 
   &:hover,

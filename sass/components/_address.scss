@@ -1,52 +1,63 @@
 .address {
-  //   display: flex;
-  //   align-items: center;
+  display: flex;
 
-  //   &__item {
-  //     display: flex;
-  //     align-self: center;
-  //   }
+  align-items: center;
 
-  //   &__item + &__item {
-  //     margin-left: 30px;
-  //   }
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+  }
 
-  //   &__link {
-  //     color: var(--primary-text-color);
-  //     font-weight: 500;
-  //     font-size: 14px;
-  //     line-height: 1.14;
-  //     letter-spacing: 0.02em;
+  &__item {
+    display: flex;
+    align-self: baseline;
+  }
 
-  //     transition: color var(--timing) var(--timing-function);
+  &__item + &__item {
+    @media screen and(max-width: 1199px) {
+      margin-top: 10px;
+    }
 
-  //     &:hover,
-  //     &:focus {
-  //       color: var(--accent-text-color);
-  //     }
-  //   }
-  // }
+    @media screen and(min-width: 1200px) {
+      margin-left: 30px;
+    }
+  }
 
-  // .address__icon-mail {
-  //   width: 16px;
-  //   height: 12px;
-  //   margin-right: 10px;
-  //   fill: var(--primary-text-color);
+  &__link {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 
-  //   .address__link:hover &,
-  //   .address__link:focus & {
-  //     fill: currentColor;
-  //   }
-  // }
+    transition: color var(--timing) var(--timing-function);
 
-  // .address__icon-smartphone {
-  //   width: 10px;
-  //   height: 16px;
-  //   margin-right: 10px;
-  //   fill: var(--primary-text-color);
+    &:hover,
+    &:focus {
+      color: var(--accent-text-color);
+    }
+  }
+}
 
-  //   .address__link:hover &,
-  //   .address__link:focus & {
-  //     fill: currentColor;
-  //   }
+.address__icon-mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+
+  .address__link:hover &,
+  .address__link:focus & {
+    fill: currentColor;
+  }
+}
+
+.address__icon-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+
+  .address__link:hover &,
+  .address__link:focus & {
+    fill: currentColor;
+  }
 }

@@ -1211,6 +1211,12 @@ body {
   transition: box-shadow var(--timing) var(--timing-function);
 }
 
+@media screen and (max-width: 767px) {
+  .project__item {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .project__item {
     margin-left: 30px;
